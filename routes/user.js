@@ -1,9 +1,10 @@
+require('dotenv').config()
 var mongoose = require('mongoose');
 var express = require('express');
 var router = express.Router();
 var StudentModel = require('../models/user');
 
-var query = 'mongodb+srv://NewDB:helloworld@cluster0.sc7pm.mongodb.net/mydb?retryWrites=true&w=majority';
+var query = process.env.MONGO_URI;
 
 const db = query;
 mongoose.Promise = global.Promise;
