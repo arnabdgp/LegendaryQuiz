@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizApp</title>
+    <link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body{
+            background-image: url("ZaragozaSpain_FR-FR2936637017_1920x1080.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            text-align: center;
+        }
+        label{
+            font-size: 30px;
+            color: white;   
+            font-weight: 50;
+        }
+        h1{
+            color: white;
+            font-weight: 100;
+        }
+    </style>
+</head>
+<body>
+    <div class="conatiner">
+        <form method="POST" action="http://127.0.0.1:3000">
+        <h1><u>LEGENDARY QUIZ</u></h1>
+        <br>
+        <label name="name">Enter your name: 
+            <br>
+            <br>
+        <input name="name" id="name" cols="100" rows="2" >
+        </label>
+        <br>
+        <br>
+        <label>Enter your email: 
+            <br><br>
+        <input name="email" id="email" cols="100" rows="2">
+        </label>
+        <br>
+        <br>
+        <label>Which film was the first to be recognised as part of the Marvel Cinematic Universe?<br><br>
+        <input name="q3" id="q3" cols="100" rows="2">
+        </label>
+        <br>
+        <br>
+        <label>What is the name of Wendy’s dog in Peter Pan?<br><br>
+        <input name="q4" id="q4" cols="100" rows="2"></label>
+        <br>
+        <br>
+        <label>What year was Heinz established?<br><br>
+        <input name="q5" id="q5" cols="100" rows="2"></label>
+        <br>
+        <br>
+        <label>Which seaside is home to the longest pier in the UK?<br><br>
+        <input name="q6" id="q6" cols="100" rows="2"></label>
+        <br>
+        <br>
+        <label>What year did Elvis die?<br><br>
+        <input name="q7" id="q7" cols="100" rows="2"></label>
+        <br>
+        <br>
+        <label>The song 'How Far I'll Go' features in which Disney film?<br><br>
+        <input name="q8" id="q8" cols="100" rows="2"></label>
+        <br>
+        <br>
+        <label>What is Queen Elizabeth II's surname?<br><br>
+        <input name="q9" id="q9" cols="100" rows="2"></label>
+        <br><br>
+        <label>Which new British military force was established in 1918?<br><br>
+        <input name="q10" id="q10" cols="100" rows="2"></label>
+        <br><br>
+        <label>In which English seaside town was ‘Fawlty Towers’ set?<br><br>
+        <input name="q11" id="q11" cols="100" rows="2"></label>
+        <br><br>
+        <label>Who discovered Penicillin?<br><br>
+        <input name="q12" id="q12" cols="100" rows="2"></label>
+        <br><br>
+        <label>What is Keir Starmer's constituency?<br><br>
+        <input name="q13" id="q13" cols="100" rows="2"></label>
+        <br><br>
+        <label>How many times has Katie Price been married?<br><br>
+        <input name="q14" id="q14" cols="100" rows="2"></label>
+        <br><br>
+    </div>
+    <button type="submit" class="btn btn-success">Submit</button>
+    <br><br><br><br>
+</form>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizApp</title>
+    <link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body{
+            background-image: url("leaves_plant_green_118405_1920x1080.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            text-align: center;
+        }
+        label{
+            font-size: 30px;
+            color: white;   
+            font-weight: 50;
+        }
+        h1{
+            color: white;
+            font-weight: 100;
+        }
+        .invisible{
+            visibility: hidden;
+        }
+        .intro{
+            color: white;
+            text-align: center;
+            font-size: 100px;
+            padding-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="intro" id="intro">
+        <p>Welcome to the Legendary Quiz</p>
+    </div>
+    <div class="container invisible" id="main">
+        
+        <form id="form" method="POST" action="/">
+        <h1><u>LEGENDARY QUIZ</u></h1>
+        <br>
+        <label name="name">Enter your name: 
+            <br>
+            <br>
+        <input name="name" id="name" cols="100" rows="2" >
+        </label>
+        <br>
+        <br>
+        <label name="email">Enter your email:
+            <br>
+            <br>
+        <input name="email" id="email" cols="100" rows="2">
+        </label>
+        <br>
+        <br>
+        <label>	
+            Who has been appointed as the managing director of Sundaram Finance Ltd?<br><br>
+        <input name="q3" id="q3" cols="100" rows="2">
+        </label>
+        <br>
+        <br>
+        <label>	
+            Who has signed an agreement with the JPCL to takeover the Rangit - IV Hydroelectric Project in Sikkim?<br><br>
+        <input name="q4" id="q4" cols="100" rows="2"></label>
+        <br>
+        <br>
+        <label>	
+            Indian Oil signed MoU for hydrogen-generation technology with which institute?<br><br>
+        <input name="q5" id="q5" cols="100" rows="2"></label>
+        <br>
+        <br>
+        <label>	
+            Airtel Payments Bank partnered with this insurance company to offer "Smart Plan Shop Package Policy".<br><br>
+        <input name="q6" id="q6" cols="100" rows="2"></label>
+        <br>
+        <br>
+        <label>Oman India Joint Investment Fund Acquired how much percentage of stake in DCB Bank?<br><br>
+        <input name="q7" id="q7" cols="100" rows="2"></label>
+        <br>
+        <br>
+        <label>	
+            UAE starts its first-ever nuclear reactor "Barakah" at Abu Dhabi in a joint venture with the Emirates Nuclear Energy Corporation (ENEC) and ________<br><br>
+        <input name="q8" id="q8" cols="100" rows="2"></label>
+        <br>
+        <br>
+        <label>	
+            Which of the following become World's first Large Scale Chemical Production Plant to completely run on Renewable Energy?<br><br>
+        <input name="q9" id="q9" cols="100" rows="2"></label>
+        <br><br>
+        <label>	
+            NTPC signs the MoU with which organisation to seek investment opportunities in areas like renewable energy, power distribution and other areas of mutual interest in India?<br><br>
+        <input name="q10" id="q10" cols="100" rows="2"></label>
+        <br><br>
+        <label>	
+            L&T Technology Services, the engineering services arm of Larsen and Toubro Group, informed that it will acquire a 100 % stake in which Texas-based company?<br><br>
+        <input name="q11" id="q11" cols="100" rows="2"></label>
+        <br><br>
+        <label>	
+            The Competition Commission of India approved acquisition of upto 58.92% stake in HealthCare Global Enterprises Limited by which company?<br><br>
+        <input name="q12" id="q12" cols="100" rows="2"></label>
+        <br><br>
+        <label>	
+            Which Indian company is set to acquire Mumbai based private sector general insurer Raheja QBE General Insurance Company Limited in a deal worth around $76 million?<br><br>
+        <input name="q13" id="q13" cols="100" rows="2"></label>
+        <br><br>
+        <label>US based Electronic chip maker Intel's investment arm, Intel Capital will buy 0.39% stake in which indian platform for Rs 1,894.50 crore?<br><br>
+        <input name="q14" id="q14" cols="100" rows="2"></label>
+        <br><br>
+    </div>
+    <button type="submit" id="button" class="btn btn-success invisible">Submit</button>
+    
+    <br><br><br><br>
+</form>
+<script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+<script>
+    
+    setTimeout(() => {
+        let element = document.getElementById("intro");
+        element.classList.remove('invisible');
+        $(document).ready(function(){
+            $(this).scrollTop(0);
+        });
+    }, 2000);
+    setTimeout(() => {
+        let element = document.getElementById("intro");
+        element.remove();
+        let ele = document.getElementById("main");
+        ele.classList.remove('invisible');
+        let bt = document.getElementById("button");
+        bt.classList.remove('invisible');
+    }, 5000);
+</script>
+</body>
+</html>
