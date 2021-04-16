@@ -63,8 +63,8 @@ app.post('/',function(req,res,next){
     User.findOne({StudentId:req.body.email},function(err,existingUser){
         if(existingUser){
             console.log("Student with same emailid exists");
-            alert("Someone with similar emailId already exists");
-            return res.redirect('/');
+            // alert("Someone with similar emailId already exists");
+            return res.render('sameuser',{emailID:req.body.email});
         }else{
             user.save(function(err,user){
                 if(err) return next(err);
